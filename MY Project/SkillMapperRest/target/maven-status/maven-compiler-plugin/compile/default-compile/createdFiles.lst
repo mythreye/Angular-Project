@@ -1,0 +1,5 @@
+com\niit\SkillMapperRest\Controller\MasterController.class
+com\niit\SkillMapperRest\EmpRestConfig\WebAppInitializer.class
+com\niit\SkillMapperRest\EmpRestConfig\AppConfig.class
+com\niit\SkillMapperRest\Controller\EmployeeController.class
+com\niit\SkillMapperRest\Controller\HRController.class

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="col-md-12"  *ngIf="empskillmaster; else elseblock">
+    <div class="form-control">
+      <h3>  
+        <span>Your Employee ID:{{empskillmaster.employeeid}}</span><br/>
+        <span>Your Batch Count:{{empskillmaster.noofbatches}}</span><br/>
+        <span>Your Student Count:{{empskillmaster.noofstudents}}</span><br/>
+        <span>Your Placed Student Count:{{empskillmaster.noplaced}}</span><br/>
+        <span>Your Experience:{{empskillmaster.experience}}</span><br/>
+        <span>Applied Post:{{empskillmaster.proposeddesignation}}</span><br/>       
+      </h3>
+     </div>
+     <a routerLink="/updateskillmaster/{{empid}}">Update Skill Master</a>
+    </div>
+</div>
+<ng-template #elseblock>
+    <div class="container">
+        <div class="col-md-12">
+            <a routerLink="/insertskillmaster/{{empid}}">Add Skill Master</a>
+          </div>
+        </div>
+</ng-template>

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-md-12">
+      <div class="table-responsive">
+          <label class="form-control">Your Employee ID:
+              <input  class="form-control" name="empid" value="{{empid}}" readonly="readonly"/>
+            </label>
+            <label class="form-control">Your Batch Count:
+              <input class="form-control" #noofbatches />
+            </label>
+            <label class="form-control">Your Student Count:
+              <input class="form-control" #noofstudents />
+            </label>
+            <label class="form-control">Your Placed Count:
+              <input class="form-control" #noplaced />
+            </label>
+            <label class="form-control">Your Experience:
+              <input class="form-control" #experience />
+            </label>
+            <label class="form-control">Your Proposed Designation:
+                <input class="form-control" #proposeddesignation />
+            </label>     
+            <button class="btn btn-primary btn-lg btn-block login-button" (click)="onInsert(noofbatches.value,noofstudents.value,noplaced.value,experience.value,proposeddesignation.value)">Submit</button>
+        </div>
+     </div>
+  </div>

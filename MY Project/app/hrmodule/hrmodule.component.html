@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+              <table id="mytable" class="table table-bordred table-striped">
+                   <thead>
+                        <th>Employee Id</th>
+                        <th>Employee Name</th>
+                        <th>Email Id</th>
+                        <th>Gender</th>
+                        <th>Contact</th>
+                        <th>Address</th>
+                        <th>Role</th>
+                        <th>Approve</th>
+                  </thead>
+                   <tbody>
+                    <tr *ngFor="let e of employees ">
+                        <td>{{e.employeeid}}</td>
+                        <td>{{e.employeeName}}</td>
+                        <td>{{e.emailid}}</td>
+                        <td>{{e.gender}}</td>
+                        <td>{{e.phno}}</td>
+                        <td>{{e.address}}</td>
+                        <td>{{e.role}}</td>
+                        <td><input type="button" (click)="onApprove(e)" value="Approve"/></td>      
+                     </tr>    
+                   </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>

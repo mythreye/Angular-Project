@@ -1,0 +1,29 @@
+<div class="container">
+    <label class="form-control">Your Id:
+    <input  class="form-control" #employeeid>
+    </label>
+    <label class="form-control">Your Name
+        <input class="form-control" #employeename />
+    </label>
+    <label class="form-control">Your Email
+        <input class="form-control" #emailid/>
+    </label>
+    <label class="form-control">Your Gender
+        <input class="form-control" #gender/>
+    </label>
+    <label class="form-control">Your Mobile Number
+        <input class="form-control" #phno/>
+    </label>
+    <label class="form-control">Your Address
+        <input class="form-control" #address/>
+    </label>
+    <label class="form-control">Your Date Of Birth
+        <input class="form-control" #birthdate/>
+    </label>
+    <label class="form-control">Your Date Of Joining
+        <input class="form-control" #joiningdate />
+    </label>
+    <label class="form-control">Your Role
+        <input class="form-control" #role/>
+    </label>
+<button class="btn btn-primary btn-lg btn-block login-button"  (click)="onInsert(employeeid.value,employeename.value,emailid.value,gender.value,phno.value,address.value,birthdate.value,joiningdate.value,role.value)">Submit</button></div>

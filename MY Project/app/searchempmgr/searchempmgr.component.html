@@ -1,0 +1,49 @@
+<div class="container">
+  <label class="form-control">Enter Skill
+      <input class="form-control" #jobrole/>
+  </label>
+<button class="btn btn-primary btn-lg btn-block login-button"  (click)="onSearch(jobrole.value)">Submit</button>
+</div>
+<br/><br/>
+
+<div class="container">
+  <div class="row">
+      <div class="table-responsive">
+        <table id="mytable" class="table table-bordred table-striped">
+             <thead>
+                  <th>Employee Id</th>
+                  <th>Employee Name</th>
+                  <th>Email Id</th>
+                  <th>Gender</th>
+                  <th>Contact</th>
+                  <th>Address</th>
+                  <th>Birth Date</th>
+                  <th>Role</th>
+                  <th>No of Batches</th>
+                  <th>No of Students</th>
+                  <th>No Placed</th>
+                  <th>Experience</th>
+                  <th>Proposed Designation</th>
+
+             </thead>
+             <tbody>
+              <tr *ngFor="let e of myemployees ">
+                  <td>{{e.employeeid}}</td>
+                  <td>{{e.employeeName}}</td>
+                  <td>{{e.emailid}}</td>
+                  <td>{{e.gender}}</td>
+                  <td>{{e.phno}}</td>
+                  <td>{{e.address}}</td>
+                  <td>{{e.birthdate}}</td>
+                  <td>{{e.role}}</td>
+                  <td>{{e.noofbatches}}</td>
+                  <td>{{e.noofstudents}}</td>
+                  <td>{{e.noplaced}}</td>
+                  <td>{{e.experience}}</td>
+                  <td>{{e.proposeddesignation}}</td>
+             </tr>    
+             </tbody>
+      </table>
+      </div>
+  </div>
+</div>

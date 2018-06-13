@@ -1,0 +1,40 @@
+<div class="container">
+<h3>Welcome {{myemployee.employeeName}}</h3>
+<nav class="navbar">
+    <div class="navbar-header pull-right">
+      <a class="navbar-brand" routerLink="/update/{{id}}">Update</a>
+      <a class="navbar-brand" routerLink="/insertskill/{{id}}">Skill</a>          
+      <a class="navbar-brand" routerLink="/insertskillmaster/{{id}}">Skill Master</a>
+    </div>
+</nav>
+  <div class="col-md-12">
+      <div class="table-responsive">
+          <table id="mytable" class="table table-bordred table-striped">
+              <thead>
+                  <th>Skill Name</th>
+                  <th>Certification</th>
+              </thead>
+              <tbody *ngIf="empskill">
+                  <tr *ngFor="let e of empskill ">
+                      <td>{{e.skillname}}</td>
+                      <td>{{e.certification}}</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <div class="col-md-12"  *ngIf="empskillmaster">
+    <div class="form-control">
+      <h3>  
+        <span>Your Employee ID:{{empskillmaster.employeeid}}</span><br/>
+        <span>Your Batch Count:{{empskillmaster.noofbatches}}</span><br/>
+        <span>Your Student Count:{{empskillmaster.noofstudents}}</span><br/>
+        <span>Your Placed Student Count:{{empskillmaster.noplaced}}</span><br/>
+        <span>Your Experience:{{empskillmaster.experience}}</span><br/>
+        <span>Applied Post:{{empskillmaster.proposeddesignation}}</span><br/>       
+      </h3>
+     </div>
+     <a routerLink="/updateskillmaster/{{id}}">Update Skill Master</a>
+    </div>
+</div>

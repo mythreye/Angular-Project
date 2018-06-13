@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row main">
+			<div class="form-group">
+				<label for="name" class="cols-sm-2 control-label">Your Name</label>
+				<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"  [(ngModel)]="myemployee.employeeName" readonly="readonly"/>
+            </div>            
+            <div class="form-group">
+                <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email"  placeholder="Enter your Email_Id" [(ngModel)]="myemployee.emailid"/>
+            </div>          
+            <div class="form-group">
+                <label for="mobile" class="cols-sm-2 control-label">Your Mobile Number</label>
+                <input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Enter your Mobile number" [(ngModel)]="myemployee.phno"/>
+            </div>
+            <div class="form-group">
+                <label for="address" class="cols-sm-2 control-label">Your Address</label>
+                <input type="textarea" class="form-control" name="address" id="address"  placeholder="Enter your Address" [(ngModel)]="myemployee.address"/>
+            </div>
+            <div class="form-group ">
+	    		<a type="button" class="btn btn-primary btn-lg btn-block login-button" (click)="onUpdate(myemployee)">Register</a>
+            </div>
+            <div class="form-group ">
+	    		<a type="button" class="btn btn-primary btn-lg btn-block login-button" (click)="onback()">Back</a>
+			</div>
+	</div>
+</div>
+	

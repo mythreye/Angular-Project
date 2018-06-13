@@ -1,0 +1,15 @@
+<div class="container">
+    <label class="form-control">Your Employee ID:
+        <input class="form-control" name="id" value="{{id}}" readonly="readonly" />
+      </label>
+    <label class="form-control">Your Skill ID:
+        <input class="form-control" #skid />
+      </label>
+  <label class="form-control">Your Skill Name
+    <input class="form-control" #skname />
+  </label>
+  <label class="form-control">Your Certification
+    <input class="form-control" #certification/>
+  </label>
+  <button class="btn btn-primary btn-lg btn-block login-button"  (click)="onInsert(id.value,skid.value,skname.value,certification.value)">Submit</button>
+</div>

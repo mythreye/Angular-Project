@@ -1,0 +1,4 @@
+com\niit\EmployeeREST\Controller\SkillController.class
+com\niit\EmployeeREST\Controller\EmployeeController.class
+com\niit\EmployeeREST\EmpRestConfig\WebAppInitializer.class
+com\niit\EmployeeREST\EmpRestConfig\AppConfig.class

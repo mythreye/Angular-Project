@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row main">
+        <div class="form-group">
+          <label for="name" class="cols-sm-2 control-label">Your Employee ID</label>
+          <input type="text" class="form-control" name="name" id="name" [(ngModel)]="empskillmaster.employeeid" readonly="readonly"/>
+              </div>            
+              <div class="form-group">
+                  <label for="email" class="cols-sm-2 control-label">Your Batch Count</label>
+                  <input type="email" class="form-control" name="bcount" id="bcount"  [(ngModel)]="empskillmaster.noofbatches"/>
+              </div>          
+              <div class="form-group">
+                  <label for="mobile" class="cols-sm-2 control-label">Your Student Count</label>
+                  <input type="text" class="form-control" name="scount" id="scount"  [(ngModel)]="empskillmaster.noofstudents"/>
+              </div>
+              <div class="form-group">
+                  <label for="address" class="cols-sm-2 control-label">Your Placed Count</label>
+                  <input type="textarea" class="form-control" name="pcount" id="pcount" [(ngModel)]="empskillmaster.noplaced"/>
+              </div>
+              <div class="form-group">
+                  <label for="address" class="cols-sm-2 control-label">Your Experience</label>
+                  <input type="textarea" class="form-control" name="exp" id="exp" [(ngModel)]="empskillmaster.experience"/>
+              </div>
+              <div class="form-group">
+                  <label for="address" class="cols-sm-2 control-label">Your Proposed Designation</label>
+                  <input type="textarea" class="form-control" name="pcount" id="pcount" [(ngModel)]="empskillmaster.proposeddesignation"/>
+              </div>             
+              <div class="form-group ">
+            <a type="button" class="btn btn-primary btn-lg btn-block login-button" (click)="onUpdate(empskillmaster)">Register</a>
+        </div>
+    </div>
+  </div>   
